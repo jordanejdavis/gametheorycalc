@@ -13,7 +13,7 @@ def twobytwo():
 # Collecting the payoffs - most likely by a user input box per payoff
   game_list = [[[], []], [[], []]]
   for i in range(0, 8):
-      game_dict[i] = st.number_input(f"Enter payoff {i}")
+      game_dict[i] = st.number_input(f"Enter payoff {i}", value=1)
   game_list[0][0] = [game_dict[0], game_dict[1]]
   game_list[0][1] = [game_dict[2], game_dict[3]]
   game_list[1][0] = [game_dict[4], game_dict[5]]
